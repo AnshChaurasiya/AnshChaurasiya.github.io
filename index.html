@@ -1,168 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Chaurasiya - Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <div class="scroll-progress"></div>
+
     <header class="header">
-      <a href="#home" class="logo">Ansh
-        <span>Chaurasiya</span>
-      </a>
-      <i class="bx bx-menu" id="menu-icon"></i>
-      <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">Ansh Chaurasiya</a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <i class="bx bx-menu menu-toggle"></i>
+        </div>
     </header>
-    <section class="home" id="home">
 
-      <div class="home-content">
-        <h1>Hi, I'm <span>Ansh Chaurasiya</span></h1>
-        <h3>I'm a <span>Software</span> and <span>Full Stack Developer</span></h3>
-        <p>Join With Me</p>
-        <div class="social-icons">
-          <a href="https://github.com/AnshChaurasiya">
-            <i class="bx bxl-github"></i>
-          </a>
-          <a href="http://www.linkedin.com/in/ansh-chaurasiya-29a018257">
-            <i class="bx bxl-linkedin-square"></i>
-          </a>
-          <a href="https://www.instagram.com/anshvision?igsh=aDRxbXRvbjRkNnFn">
-            <i class="bx bxl-instagram-alt"></i>
-          </a>
-          <a href="https://x.com/Off_Ansh?t=9kZXdqVx9-kfFtj0no8asQ&s=08">
-            <i class="bx bxl-twitter"></i>
-          </a>
-        </div>
-        <br><br>
-        <div class="btn-group">
-          <a href="#" class="btn">Hire</a>
-          <a href="#contact" class="btn">Contact</a>
-        </div>
-      </div>
-      
-      <div class="home-img">
-        <img src="pic.jpeg" alt="">
-      </div>
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Ansh Chaurasiya</span></h1>
+                <h3>Software & <span class="highlight">Full Stack Developer</span></h3>
+                <p>Passionate about creating innovative solutions and exploring the frontiers of technology, space, and physics.</p>
+                
+                <div class="social-icons">
+                    <a href="https://github.com/AnshChaurasiya" target="_blank">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="http://www.linkedin.com/in/ansh-chaurasiya-29a018257" target="_blank">
+                        <i class="bx bxl-linkedin-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/anshvision?igsh=aDRxbXRvbjRkNnFn" target="_blank">
+                        <i class="bx bxl-instagram-alt"></i>
+                    </a>
+                    <a href="https://x.com/Off_Ansh?t=9kZXdqVx9-kfFtj0no8asQ&s=08" target="_blank">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                </div>
 
-    </section>
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="pic.jpeg" alt="">
-      </div>
-      <div class="about-content">
-        <h2>About <span>Me</span></h2>
-        <p>I am a passionate computer science student with a strong foundation in programming, exceptional English skills, 
-          and a talent for delivering impactful presentations. 
-          My insatiable curiosity drives me to explore diverse topics, 
-          with a particular fascination for space and physics.</p><br>
-        <a href="#" class="btn">Read More</a>
-      </div>
-    </section>
-    <section class="services" id="services">
-      <h2 class="heading">Services</h2>
+                <div class="btn-group">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                </div>
+            </div>
 
-      <div class="services-container">
-
-        <div class="service-box">
-          <div class="service-info">
-            <i class="bx bxs-devices"></i>
-            <h4>Software Development</h4>
-            <p>I have a great understanding of various programming 
-              language in depth helping me to create wonderfull Softwares.</p>
-          </div>
-        </div>
-
-        <div class="service-box">
-          <div class="service-info">
-            <i class="bx bx-code"></i>
-            <h4>Full Stack Developer</h4>
-            <p>I have a good knowledge and experience of MERN and had worked 
-              with lot of people to make and host their website. </p>
-          </div>
-        </div>
-
-        <div class="service-box">
-          <div class="service-info">
-            <i class="bx bx-code-curly"></i>
-            <h4>AI and ML</h4>
-            <p>AI and ML is my favourite field and I love to learn and explore the field more.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
-
-      <form action="">
-        <div class="input-group">
-          <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email">
-
-          </div>
-          <div class="input-box">
-            <input type="number" placeholder="Phone Number">
-            <input type="text" placeholder="Subject">
-          </div>
-          <div class="input-group-2">
-
-            <textarea name="" id="" cols="30" rows="10"
-            
-            placeholder="Your Message"></textarea>
-            
-            <input type="submit" value="Send Message"
-            class="btn">
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="pic.jpeg" alt="Ansh Chaurasiya">
+                </div>
             </div>
         </div>
-      </form>
     </section>
 
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="pic.jpeg" alt="About Ansh">
+            </div>
+            <div class="about-content">
+                <h2>About <span>Me</span></h2>
+                <p>I am a passionate computer science student with a strong foundation in programming and exceptional English skills. My talent for delivering impactful presentations, combined with my insatiable curiosity, drives me to explore diverse topics.</p>
+                <p>With a particular fascination for space and physics, I bring a unique perspective to technology and innovation. I'm constantly learning and pushing the boundaries of what's possible in software development.</p>
+                <a href="#contact" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="services-container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="bx bxs-devices"></i>
+                    <h4>Software Development</h4>
+                    <p>I have a great understanding of various programming languages in depth, helping me create wonderful software solutions that meet your needs.</p>
+                </div>
+                <div class="service-card">
+                    <i class="bx bx-code"></i>
+                    <h4>Full Stack Development</h4>
+                    <p>With good knowledge and experience in MERN stack, I've worked with many people to create and host their websites successfully.</p>
+                </div>
+                <div class="service-card">
+                    <i class="bx bx-code-curly"></i>
+                    <h4>AI & Machine Learning</h4>
+                    <p>AI and ML is my favorite field. I love to learn and explore this domain, creating intelligent solutions for complex problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="contact" id="contact">
+    <div class="contact-container">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="f253484a-5903-4e3b-93da-4cbe6db53424" />
+
+            <div class="input-row">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Subject">
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <p id="form-message" style="margin-top:10px;"></p>
+    </div>
+</section>
+
+<script>
+    const form = document.getElementById('contact-form');
+    const formMessage = document.getElementById('form-message');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        formMessage.textContent = 'Sending message...';
+
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                redirect: 'follow'
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                formMessage.style.color = 'green';
+                formMessage.textContent = 'Message sent successfully! I\'ll get back to you soon.';
+                form.reset();
+            } else {
+                throw new Error(result.message || 'Something went wrong.');
+            }
+        } catch (error) {
+            formMessage.style.color = 'red';
+            formMessage.textContent = `Error: ${error.message}`;
+        }
+    });
+</script>
+
+
     <footer class="footer">
-      <div class="social-icons">
-        <a href="https://github.com/AnshChaurasiya">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="http://www.linkedin.com/in/ansh-chaurasiya-29a018257">
-        <i class="bx bxl-linkedin-square"></i>
-        </a>
-        <a href="https://www.instagram.com/anshvision?igsh=aDRxbXRvbjRkNnFn">
-        <i class="bx bxl-instagram-alt"></i>
-        </a>
-        <a href="https://x.com/Off_Ansh?t=9kZXdqVx9-kfFtj0no8asQ&s=08">
-        <i class="bx bxl-twitter"></i>
-      </a>
-      </div>
-      <br>
-      <ul class="list">
-        <li>
-          <a href="#">FAQ</a>
-        </li>
-        <li>
-          <a href="#services">Services</a>
-        </1i>
-        <li>
-          <a href="#about">About Me</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-      <p class="copyright">
-        Ansh Chaurasiya | All Rights Reserved
-      </p>
-      </ul>
-      </footer>
-    <script src="script.js"></script>
-  </body>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://github.com/AnshChaurasiya" target="_blank">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="http://www.linkedin.com/in/ansh-chaurasiya-29a018257" target="_blank">
+                    <i class="bx bxl-linkedin-square"></i>
+                </a>
+                <a href="https://www.instagram.com/anshvision?igsh=aDRxbXRvbjRkNnFn" target="_blank">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+                <a href="https://x.com/Off_Ansh?t=9kZXdqVx9-kfFtj0no8asQ&s=08" target="_blank">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="#home">FAQ</a>
+            </div>
+            <p class="copyright">© 2025 Ansh Chaurasiya. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbar = document.querySelector('.navbar');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', () => {
+                navbar.classList.remove('active');
+            });
+        });
+
+        // Header scroll effect
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll progress bar
+        const scrollProgress = document.querySelector('.scroll-progress');
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            scrollProgress.style.width = scrollPercent + '%';
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for scroll animations
+        document.querySelectorAll('.service-card, .about-content, .about-image').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
 </html>
