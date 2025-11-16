@@ -1,0 +1,205 @@
+/* Awakening Grove - Origin Forest World */
+.grove {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #052E16 0%, #0C3B2E 50%, #1A4D2E 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem;
+}
+
+.canvasContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+/* Firefly Particles */
+.fireflies {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.firefly {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #FDE68A;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #FDE68A, 0 0 20px #FDE68A;
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translateY(-30px) translateX(10px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-60px) translateX(-10px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateY(-30px) translateX(5px);
+    opacity: 1;
+  }
+}
+
+/* Fog Layers */
+.fog {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(0deg, rgba(16, 185, 129, 0.3), transparent);
+  z-index: 3;
+  animation: fogMove 10s ease-in-out infinite;
+}
+
+.fogLayer2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(0deg, rgba(110, 231, 183, 0.2), transparent);
+  z-index: 3;
+  animation: fogMove 15s ease-in-out infinite reverse;
+}
+
+@keyframes fogMove {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+/* Content */
+.content {
+  position: relative;
+  z-index: 10;
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(110, 231, 183, 0.3);
+  border-radius: 2rem;
+  color: #6EE7B7;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(12px);
+}
+
+.icon {
+  font-size: 1.25rem;
+}
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #F1F4F8;
+  text-shadow: 0 0 30px rgba(110, 231, 183, 0.5);
+}
+
+.highlight {
+  color: #6EE7B7;
+  text-shadow: 0 0 40px rgba(110, 231, 183, 0.8);
+}
+
+.description {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  color: #94A3B8;
+  margin-bottom: 4rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.story {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.storyCard {
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(110, 231, 183, 0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.storyCard:hover {
+  transform: translateY(-8px);
+  border-color: rgba(110, 231, 183, 0.5);
+  box-shadow: 0 12px 40px rgba(16, 185, 129, 0.3);
+}
+
+.storyIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.storyCard h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #6EE7B7;
+  margin-bottom: 0.75rem;
+}
+
+.storyCard p {
+  color: #94A3B8;
+  line-height: 1.6;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .firefly,
+  .fog,
+  .fogLayer2 {
+    animation: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .grove {
+    padding: 4rem 1.5rem;
+  }
+
+  .story {
+    grid-template-columns: 1fr;
+  }
+}
